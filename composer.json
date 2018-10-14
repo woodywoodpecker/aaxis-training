@@ -33,7 +33,9 @@
     "oro/crm-dotmailer": "3.0.*",
     "oro/crm-zendesk": "3.0.*",
     "oro/commerce": "3.0.*",
-    "oro/commerce-crm": "3.0.*"
+    "oro/commerce-crm": "3.0.*",
+    "oro/twig-inspector": "^1.0@dev",
+    "oro/commerce-authorizenet": "^3.0"
   },
   "require-dev": {
     "sensio/generator-bundle": "3.1.*",

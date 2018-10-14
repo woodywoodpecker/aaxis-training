@@ -14,7 +14,8 @@ class AppKernel extends OroKernel
     public function registerBundles()
     {
         $bundles = array(
-            // bundles
+            // bundles,
+            new AppBundle\AppBundle(),
         );
 
         if ('dev' === $this->getEnvironment()) {
@@ -22,6 +23,7 @@ class AppKernel extends OroKernel
             $bundles[] = new Symfony\Bundle\WebServerBundle\WebServerBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
             $bundles[] = new Symfony\Bundle\DebugBundle\DebugBundle();
+            $bundles[] = new Oro\TwigInspector\Bundle\OroTwigInspectorBundle();
             if (class_exists('Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle')) {
                 $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
             }
