@@ -34,3 +34,7 @@ app:
 controllers:
     resource: '../src/Controller/'
     type:     annotation
+
+product_controllers:
+    resource: '../src/Product/Controller/'
+    type:     annotation

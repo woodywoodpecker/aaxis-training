@@ -43,3 +43,11 @@ services:
         tags:
         - { name: kernel.event_listener, event: kernel.request }
 
+    Product\:
+        resource: '../src/Product/*'
+        exclude: '../src/Product/Model'
+
+    Product\Controller\:
+        resource: '../src/Product/Controller'
+        public: true
+        tags: ['controller.service_arguments']
